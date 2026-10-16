@@ -40,7 +40,7 @@ section[id] { scroll-margin-top: 16px; }
 
 /* Header */
 header.site {
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 0;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px;
   padding: 24px 0;
 }
 .logo {
@@ -165,5 +165,7 @@ footer.site a { margin-right: 18px; text-decoration: none; }
 }
 @media (max-width: 640px) {
   nav a { margin-left: 14px; letter-spacing: 1.2px; }
+  nav a:first-child { margin-left: 0; }
+  .badge { padding: 13px 20px; font-size: 14px; white-space: nowrap; }
   .logo { font-size: 26px; }
 }
