@@ -1,0 +1,3 @@
+# Hostinger: profile links (inlay.info/@username) open the home page until profile pages exist.
+RewriteEngine On
+RewriteRule ^@ / [R=302,L]
