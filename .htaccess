@@ -1,3 +1,7 @@
-# Hostinger: profile links (inlay.info/@username) open the home page until profile pages exist.
+# inlay.info is one page. Old addresses and profile links go to the right place on it.
 RewriteEngine On
+RewriteRule ^privacy(\.html)?$ /#privacy [R=301,NE,L]
+RewriteRule ^terms(\.html)?$ /#terms [R=301,NE,L]
+RewriteRule ^support(\.html)?$ /#support [R=301,NE,L]
+RewriteRule ^pro(\.html)?$ /#pro [R=301,NE,L]
 RewriteRule ^@ / [R=302,L]

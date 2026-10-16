@@ -201,6 +201,31 @@ footer.site a { margin-right: 18px; text-decoration: none; }
 .feature p:not(.kicker) { font-family: var(--text); font-size: 21px; line-height: 1.45; margin: 0; max-width: 420px; }
 main .band { margin-top: 70px; }
 
+/* One-page sections */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 20px; }
+.kicker.light { color: var(--putty); opacity: 1; }
+.pro { text-align: left; }
+.band.pro > * { max-width: 720px; margin-left: auto; margin-right: auto; }
+.pro h2, .pro .kicker { text-align: center; }
+.pro > p { text-align: center; }
+.perks { list-style: none; padding: 0; margin: 34px auto 30px; }
+.perks li {
+  font-family: var(--text); font-size: 21px; line-height: 1.45;
+  padding: 14px 0; border-top: 0.75px solid rgba(201, 184, 163, 0.35);
+}
+.perks li:last-child { border-bottom: 0.75px solid rgba(201, 184, 163, 0.35); }
+.perks strong { font-family: var(--serif); font-weight: 400; color: #fff; margin-right: 4px; }
+.pro .price { font-family: var(--sans); font-size: 14px; line-height: 1.7; color: var(--putty); }
+.prose { padding-top: 90px; }
+.prose h2 { font-family: var(--serif); font-weight: 400; color: var(--burgundy); font-size: clamp(34px, 5vw, 46px); line-height: 1.1; margin: 0 0 18px; }
+.prose h3 { font-family: var(--serif); font-weight: 400; color: var(--burgundy); font-size: 24px; margin: 34px 0 6px; }
+.prose p { font-family: var(--text); font-size: 21px; line-height: 1.5; margin: 0 0 12px; }
+.prose details p { font-size: 19px; }
+.legal { padding-top: 60px; padding-bottom: 70px; }
+.legal h4 { font-family: var(--sans); font-size: 13px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--burgundy); margin: 26px 0 6px; }
+.legal .updated { font-family: var(--sans); font-size: 13px; opacity: 0.55; }
+
 @media (max-width: 760px) {
   .cover, .feature { grid-template-columns: 1fr; gap: 32px; }
   .cover { padding-top: 10px; }
@@ -213,3 +238,4 @@ main .band { margin-top: 70px; }
   .logo { font-size: 28px; }
   .page h1 { font-size: 38px; }
 }
+.prose .lede { font-size: clamp(22px, 2.8vw, 26px); max-width: none; margin-bottom: 8px; }
